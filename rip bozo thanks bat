@@ -1,0 +1,15 @@
+local message = {"is that made by dark eccentric? hes a scripter", "is that leaked?", "can i have that?", "can you leak that?", "is that on dark eccentric's channel?", "are you able to leak that?", "plsss can i have that? i wont leak and give to my friends plssSSS", "BRO OMG THATS RARE CAN I HAVE IT", "OMG CAN I HAVE THAT I SAW U ON YOUTUBE PLZZZ MAN", "did FO10 make that?", "does that work on arcus x?", "is that network bypass?", "is that netless?", "are you using happymod too?"}
+
+
+
+function Skid()
+    local a = math.random(1,14)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message[a], "All")
+end
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(k)
+    if k == "m" then
+        Skid()
+    end
+end)
